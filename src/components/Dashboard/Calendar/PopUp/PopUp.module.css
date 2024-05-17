@@ -1,0 +1,101 @@
+.popUp{
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+    z-index: 1000; /* Ensure the PopUp is above other content */
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid yellow;
+    height: 350px;
+    width: 350px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    /* border:4px solid blue; */
+    height: 50%;
+}
+
+.closeButton{
+    /* margin-left: 325px; */
+    position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+}
+
+.textLeftContainer{
+    /* border: 2px solid black; */
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+.imageRightContainer{
+    /* border: 5px solid blue; */
+    display: flex;
+    gap: 1px;
+    flex-direction: column;
+    width: 50%;
+    /* height: 100%; */
+}
+
+.categoryDropdown, .image, .title{
+    width: 100%;
+    font-size: 11px;
+
+}
+
+/* .notes{
+    width: 100%;
+    font-size: 11px;
+    height: 100%;
+    color: blue;
+    border: 2px sold red;
+} */
+
+.notes {
+    width: 100%;
+    font-size: 11px;
+    /* height: 100%; */ /* Remove this line or adjust it */
+    min-height: 107px; /* Example: Set a minimum height */
+     /* border: 2px solid red; */
+}
+
+.rememberButton{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 103px;
+    /* margin-top: 10px; */
+    padding: 3px;
+    font-size: 11px;
+    background-color: goldenrod;
+    
+}
+
+.image{
+    display: block;
+    height: 14%;
+    /* border: 2px solid hotpink; */
+}
+
+.imagePreview{
+    height: 124px;
+    width: 100%;
+    /* border: 2px solid green; */
+    object-fit: cover;
+}

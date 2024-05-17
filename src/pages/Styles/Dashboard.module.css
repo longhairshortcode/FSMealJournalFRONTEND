@@ -1,0 +1,9 @@
+.componentContainer{
+    display: flex;
+    align-items: center;
+    /* border: 5px solid rgb(199, 155, 68); */
+    background-color: rgb(151, 162, 145);
+    height: 100vh;
+    width: 100vw;
+    /* padding:  */
+}

@@ -1,0 +1,31 @@
+.componentContainer{ 
+}
+
+.titleAndFormContainer{
+    /* border: 2px black solid; */
+    width: 450px;
+    height: 200px;
+    margin: 150px auto;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.email, .password{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.button{
+    width: 450px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.logOrSign{
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}

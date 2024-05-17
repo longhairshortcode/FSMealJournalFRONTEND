@@ -1,0 +1,43 @@
+.componentContainer{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(223, 161, 81);
+    border: 2px solid black;
+    background-image:url("../../assets/coffeeFace.jpeg"); 
+    /* background-repeat: repeat; */
+    background-position: center;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    
+
+}
+
+.appName{
+    color: white;
+    /* border: 2px solid black; */
+    width: 300px;
+}
+
+.message{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.logInButton{
+    border: 2px solid white;
+    color: white;
+    /* padding: 5px; */
+    font-weight: lighter;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,52 @@
+.componentContainer{
+ 
+    border: 5px solid  rgb(134, 106, 161);
+    border-radius: 10px;
+    height: 90%;
+    /* max-width: 1350px; */
+    width: 100%;
+    background-color: rgb(251, 248, 226);
+}
+
+.daysContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square{
+    border: 2px solid rgb(222, 171, 249);
+    border-radius: 5px;
+    width: 14.25%;
+    height: 125px;
+}
+
+.number{
+    font-weight: bold;
+}
+
+.daysTitleContainer{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(119, 66, 50);
+}
+
+
+
+.inputAndButtonContainer{
+    /* display: flex; */
+    /* border: 2px solid blue; */
+    width: 154px;
+}
+
+.image, .title, .notes{
+    font-size: 11px;
+}
+
+.rememberButton{
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.visibilityHidden{
+    visibility: hidden;
+}
