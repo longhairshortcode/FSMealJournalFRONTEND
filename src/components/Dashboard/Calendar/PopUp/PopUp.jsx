@@ -46,7 +46,7 @@ function PopUp({ setShowPopUp }) {
   console.log("Form Data:", formData);
 
     try {
-      const res = await axios.post("http://localhost:2121/meal/create-meal", formData);
+      const res = await axios.post("https://remember-backend-kdq2.onrender.com/meal/create-meal", formData);
       console.log(res);
 
       // Handle successful response

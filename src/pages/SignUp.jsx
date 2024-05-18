@@ -83,7 +83,7 @@ async function handleSubmit(e) {
 } 
 //2) Try to post userSignUpdData, if 201, setUser from App.jsx with res data,
 try{
-  const res = await axios.post("http://localhost:2121/user/sign-up", {email, name, password})
+  const res = await axios.post("https://remember-backend-kdq2.onrender.com/user/sign-up", {email, name, password})
   console.log("THIS IS THE RES", res)
   if (res.status === 201){
     setUserSignUpData(prev => ({
