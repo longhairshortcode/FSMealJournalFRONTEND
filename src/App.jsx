@@ -17,7 +17,7 @@ const [userId, setUserId] = useState()
 const [user, setUser] = useState({
   email: "",
   name: "",
-  id: 1
+  id: "",
 
 })
 

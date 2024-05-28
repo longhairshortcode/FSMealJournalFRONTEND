@@ -8,6 +8,7 @@ function Calendar() {
     const { month, monthsTitle } = useContext(MonthContext);
     const [totalDays, setTotalDays] = useState(0);
     const [showPopUp, setShowPopUp] = useState(false);
+    const [mealDay, setMealDay] = useState(0)
 
     function daysInMonth(month, year) {
         return new Date(year, month, 0).getDate();
@@ -42,7 +43,7 @@ function Calendar() {
                 </div>
             );
         }
-
+/*{month} { new Date().getFullYear()}*/
         return squares;
     }
 
@@ -58,7 +59,7 @@ function Calendar() {
                     ))}
                 </div>
             </div>
-            {showPopUp && <PopUp setShowPopUp={setShowPopUp} />}
+            {showPopUp && <PopUp day={month + "_" + new Date().getFullYear() } setShowPopUp={setShowPopUp} />}
             <div className={style.daysContainer}>{renderSquares()}</div>
         </div>
     );

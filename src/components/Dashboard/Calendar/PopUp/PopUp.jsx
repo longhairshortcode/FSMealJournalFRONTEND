@@ -1,14 +1,17 @@
 import style from "./PopUp.module.css"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import axios from "axios"
+import {AuthContext} from "../../../../App"
 
 function PopUp({ setShowPopUp }) {
-  
+  const {user} = useContext(AuthContext)
   const [mealData, setMealData] = useState({
     category: "",
     image: null,
     title: "",
     notes: "",
+    userID: user.id,
+    day: "",
   }); 
 
   const [image, setImage] = useState(null);
@@ -40,13 +43,19 @@ function PopUp({ setShowPopUp }) {
     formData.append("category", mealData.category);
     formData.append("title", mealData.title);
     formData.append("notes", mealData.notes);
-    formData.append("image", image);
+    formData.append("userID", mealData.userID);
+    formData.append("file", image);
+    formData.append("day", day);
 
       // Log form data before sending the request
-  console.log("Form Data:", formData);
+    // Log form data before sending the request
+    for (let [key, value] of formData.entries()) {
+      console.log(`${key}:`, value);
+    }
 
     try {
-      const res = await axios.post("https://remember-backend-kdq2.onrender.com/meal/create-meal", formData);
+      // const res = await axios.post("https://remember-backend-kdq2.onrender.com/meal/create-meal", formData);
+      const res = await axios.post("http://localhost:3000/meal/create-meal", formData);
       console.log(res);
 
       // Handle successful response
